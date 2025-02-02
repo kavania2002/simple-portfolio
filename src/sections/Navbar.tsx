@@ -19,7 +19,7 @@ const LargeScreenNavbar = () => {
         </div>
         <div className="flex md:gap-x-5 lg:gap-x-8">
           {navbarItems.map((item, index) => (
-            <a key={index} href={item.href}>
+            <a className="hover:opacity-75" key={index} href={item.href}>
               {item.name}
             </a>
           ))}
@@ -71,7 +71,7 @@ const MobileNavbar = () => {
         } transition-transform duration-300 ease-in-out flex flex-col items-center justify-center shadow-lg`}>
         <div className="flex flex-col gap-y-5 text-xl font-bold text-tertiary">
           {navbarItems.map((item, index) => (
-            <a key={index} href={item.href}>
+            <a className="hover:opacity-75" key={index} href={item.href}>
               {item.name}
             </a>
           ))}
