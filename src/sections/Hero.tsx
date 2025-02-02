@@ -11,7 +11,7 @@ const Hero = () => {
           <p className="font-bold text-[6vh] leading-[6vh] md:leading-none md:text-4xl lg:text-5xl xl:text-6xl text-tertiary">
             Kavan Gondalia
           </p>
-          <div className="flex flex-col gap-y-1 text-[3vh] leading-[4vh] md:leading-none md:text-xl lg:text-xl xl:text-4xl text-tertiary-850">
+          <div className="flex flex-col gap-y-1 text-[3vh] leading-[4vh] md:leading-tight md:text-xl lg:text-xl xl:text-4xl text-tertiary-850">
             <p>Trying everything</p>
             <p>& finding happiness</p>
           </div>

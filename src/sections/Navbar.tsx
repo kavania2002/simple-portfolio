@@ -34,12 +34,10 @@ const MobileNavbar = () => {
 
   return (
     <>
-      <div className="fixed w-full bg-transparent z-30">
-        <div className="absolute w-full flex justify-center pt-4">
-          <p className="text-tertiary text-3xl font-bold">
-            <a href="/">kavania2002</a>
-          </p>
-        </div>
+      <div className="absolute w-full flex justify-center pt-4 pb-4">
+        <p className="text-tertiary text-3xl font-bold">
+          <a href="/">kavania2002</a>
+        </p>
       </div>
 
       {isMenuOpen && (
