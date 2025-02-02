@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="">
           <a href="/">kavania2002</a>
         </div>
-        <div className="flex gap-x-8">
+        <div className="flex md:gap-x-5 lg:gap-x-8">
           <a href="/experience">Experience</a>
           <a href="/projects">Projects</a>
           <a href="/achievements">Achievements</a>
