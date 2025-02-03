@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 import Loader from "./components/Loader";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
-import AboutMe from "./sections/AboutMe";
+import AboutMeLargeScreen from "./sections/AboutMeLargeScreen";
+import AboutMeSmallScreen from "./sections/AboutMeSmallScreen";
+import SkillsSmallScreen from "./sections/SkillsSmallScreen";
+import { useScreenSize } from "./contexts/ScreenSizeContext";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const { isMobile } = useScreenSize();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,9 +31,21 @@ function App() {
             <Navbar />
             <Hero />
           </div>
-          <div className="snap-always snap-center">
-            <AboutMe />
-          </div>
+          {!isMobile && (
+            <div className="snap-always snap-center">
+              <AboutMeLargeScreen />
+            </div>
+          )}
+          {isMobile && (
+            <div className="snap-always snap-center">
+              <AboutMeSmallScreen />
+            </div>
+          )}
+          {isMobile && (
+            <div className="snap-always snap-center">
+              <SkillsSmallScreen />
+            </div>
+          )}
         </div>
       </div>
     </div>

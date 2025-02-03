@@ -12,9 +12,9 @@
 
   --font-inria-sans: "Inria Sans", sans-serif;
 
-  --text-xs: 12px;
-  --text-sm: 16px;
-  --text-default: 20px;
+  --text-sm: 12px;
+  --text-base: 16px;
+  --text-md: 20px;
 
   --text-lg: 24px;
   --text-lg--line-height: 28px;
