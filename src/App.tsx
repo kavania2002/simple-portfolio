@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="overflow-hidden">
       <Loader />
       <div
         className={`bg-primary font-inria-sans transition-all duration-1000 ${
