@@ -15,4 +15,8 @@ export const navbarItems = [
     name: "Contact",
     href: "/contact",
   },
+  {
+    name: "Resume",
+    href: "https://bit.ly/kavania2002",
+  }
 ];

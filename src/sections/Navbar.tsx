@@ -19,7 +19,11 @@ const LargeScreenNavbar = () => {
         </div>
         <div className="flex md:gap-x-5 lg:gap-x-8">
           {navbarItems.map((item, index) => (
-            <a className="hover:opacity-75" key={index} href={item.href}>
+            <a
+              target={item.name === "Resume" ? "_blank" : "_self"}
+              className="hover:opacity-75"
+              key={index}
+              href={item.href}>
               {item.name}
             </a>
           ))}
