@@ -13,7 +13,7 @@ const Navbar = () => {
 const LargeScreenNavbar = () => {
   return (
     <div className="w-full">
-      <div className="pt-6 md:px-24 lg:px-36 xl:px-50 2xl:px-64 flex items-center justify-between text-base lg:text-md font-bold text-tertiary">
+      <div className="pt-6 md:px-24 lg:px-36 xl:px-50 2xl:px-64 flex items-center justify-between text-base lg:text-md 2xl:text-lg font-bold text-tertiary">
         <div className="">
           <a href="/">kavania2002</a>
         </div>
