@@ -12,7 +12,7 @@ const Navbar = () => {
 
 const LargeScreenNavbar = () => {
   return (
-    <div className="absolute w-full">
+    <div className="w-full">
       <div className="pt-6 md:px-24 lg:px-36 xl:px-50 2xl:px-64 flex items-center justify-between text-sm lg:text-default font-bold text-tertiary">
         <div className="">
           <a href="/">kavania2002</a>
@@ -33,7 +33,7 @@ const MobileNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="relative w-full">
       <div className="absolute w-full flex justify-center pt-4 pb-4">
         <p className="text-tertiary text-3xl font-bold">
           <a href="/">kavania2002</a>
@@ -46,10 +46,10 @@ const MobileNavbar = () => {
           onClick={() => setIsMenuOpen(false)}></div>
       )}
 
-      <div className="fixed w-full z-40">
+      <div className="absolute w-full z-40">
         <IoMdClose
           onClick={() => setIsMenuOpen(false)}
-          className={`fixed right-4 top-4 text-4xl text-tertiary cursor-pointer transform transition-transform duration-300 ${
+          className={`absolute right-4 top-4 text-4xl text-tertiary cursor-pointer transform transition-transform duration-300 ${
             isMenuOpen
               ? "-rotate-90 opacity-100"
               : "rotate-90 opacity-100 scale-0 transition-opacity"
@@ -57,7 +57,7 @@ const MobileNavbar = () => {
         />
         <BiMenuAltRight
           onClick={() => setIsMenuOpen(true)}
-          className={`fixed right-4 top-4 text-4xl text-tertiary cursor-pointer transition-opacity duration-300 ${
+          className={`absolute right-4 top-4 text-4xl text-tertiary cursor-pointer transition-opacity duration-300 ${
             isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         />
@@ -75,7 +75,7 @@ const MobileNavbar = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
