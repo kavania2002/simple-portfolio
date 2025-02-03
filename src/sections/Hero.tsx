@@ -16,7 +16,7 @@ const Hero = () => {
             <p>& finding happiness</p>
           </div>
           <div className="">
-            <button className="py-1 px-2 lg:w-32 flex gap-x-2 items-center justify-center rounded-md lg:rounded-lg text-secondary border border-secondary hover:text-white hover:bg-secondary cursor-pointer transition-all duration-300">
+            <button className="py-1 px-2 lg:w-32 flex gap-x-2 items-center justify-center rounded-md lg:rounded-lg text-secondary border-2 border-secondary hover:text-white hover:bg-secondary cursor-pointer transition-all duration-300">
               <FaHandshake className="text-lg md:text-default lg:text-lg xl:text-xl" />
               <p className="text-sm md:text-xs lg:text-sm font-bold">
                 Hire Me!
