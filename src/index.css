@@ -6,8 +6,11 @@
   --color-primary: #fdf0e2;
   --color-secondary: #c08521;
   --color-secondary-250: #c0852140;
+  --color-secondary-300: #c085214d;
+  --color-secondary-500: #c0852180;
   --color-on-secondary: #fdf0e2;
   --color-tertiary: #41372c;
+  --color-tertiary-300: #41372c4d;
   --color-tertiary-850: #41362cd9;
 
   --font-inria-sans: "Inria Sans", sans-serif;

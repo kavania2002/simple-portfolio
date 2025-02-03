@@ -6,6 +6,7 @@ import AboutMeLargeScreen from "./sections/AboutMeLargeScreen";
 import AboutMeSmallScreen from "./sections/AboutMeSmallScreen";
 import SkillsSmallScreen from "./sections/SkillsSmallScreen";
 import { useScreenSize } from "./contexts/ScreenSizeContext";
+import Experience from "./sections/Experience";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,9 @@ function App() {
               <SkillsSmallScreen />
             </div>
           )}
+          <div className="snap-always snap-center">
+            <Experience />
+          </div>
         </div>
       </div>
     </div>
