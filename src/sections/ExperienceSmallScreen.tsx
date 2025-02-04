@@ -68,8 +68,13 @@ const Experience = () => {
                     experienceData.experiences.map((experience, index) => (
                       <div key={index} className="flex flex-col gap-y-3">
                         <div className="flex flex-col lg:gap-y-2">
-                          <div className="text-tertiary text-[2.2vh] font-bold">
+                          <div className="text-tertiary text-[2.2vh] font-bold flex justify-between items-center gap-x-2">
                             {experience.role}
+                            {experience.place !== "" && (
+                              <p className="bg-secondary font-bold text-primary rounded-full text-[1vh] px-3 py-1 whitespace-nowrap">
+                                {experience.place}
+                              </p>
+                            )}
                           </div>
                           <div className="text-tertiary font-light text-[1.2vh]">
                             {experience.duration}
