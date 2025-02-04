@@ -40,9 +40,9 @@ const Experience = () => {
                   onClick={() => setSelectedCompany(index)}
                   className={`${
                     selectedCompany === index
-                      ? "bg-secondary-300 border-tertiary text-secondary rounded-r-lg"
-                      : "border-secondary-500 text-secondary"
-                  }  border-l-4 text-md font-bold py-4 px-4 cursor-pointer text-center`}>
+                      ? "bg-secondary-300 border-tertiary rounded-r-lg"
+                      : "border-secondary-500"
+                  }  border-l-4 text-md font-bold py-4 px-4 cursor-pointer text-center text-secondary`}>
                   {experienceData.company}
                 </div>
               ))
@@ -57,9 +57,7 @@ const Experience = () => {
                 (experienceData, index) =>
                   selectedCompany === index &&
                   experienceData.experiences.map((experience, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col lg:gap-y-2">
+                    <div key={index} className="flex flex-col lg:gap-y-2">
                       <div className="">
                         <p className="text-xl 2xl:text-3xl font-bold text-tertiary">
                           {experience.role}

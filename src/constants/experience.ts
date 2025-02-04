@@ -79,6 +79,48 @@ export const EXPERIENCES = [
           },
         ],
       },
+      {
+        company: "Ahmedabad University",
+        experiences: [
+          {
+            role: "Software Developer",
+            duration: "July 2024 - Present",
+            description: [
+              "Currently developing an advanced underwater photo capturing app with Jetpack Compose and Kotlin, utilizing MVVM architecture, coroutines, and background jobs to optimize camera capabilities and ensure reliable image processing",
+            ],
+          },
+          {
+            role: "Software Developer Intern",
+            duration: "Jan 2024 - June 2024",
+            description: [
+              "Worked on a Project to replace existing Looker Reports by developing a new reporting system using AngularJS, Spring, PostgreSQL, and GraphQL, serving over 1000 users with improved functionality and user experience",
+              "Developed a high-performance BFF layer with GraphQL, optimizing data responses and implementing Java Spring for robust backend server performance, which included reducing SQL query response times by 12%",
+              "Engineered micro-frontends with AngularJS and RxJS, achieving seamless state management and enhancing the modularity and maintainability of the application",
+            ],
+          },
+        ],
+      },
+      {
+        company: "Ahmedabad University",
+        experiences: [
+          {
+            role: "Software Developer",
+            duration: "July 2024 - Present",
+            description: [
+              "Currently developing an advanced underwater photo capturing app with Jetpack Compose and Kotlin, utilizing MVVM architecture, coroutines, and background jobs to optimize camera capabilities and ensure reliable image processing",
+            ],
+          },
+          {
+            role: "Software Developer Intern",
+            duration: "Jan 2024 - June 2024",
+            description: [
+              "Worked on a Project to replace existing Looker Reports by developing a new reporting system using AngularJS, Spring, PostgreSQL, and GraphQL, serving over 1000 users with improved functionality and user experience",
+              "Developed a high-performance BFF layer with GraphQL, optimizing data responses and implementing Java Spring for robust backend server performance, which included reducing SQL query response times by 12%",
+              "Engineered micro-frontends with AngularJS and RxJS, achieving seamless state management and enhancing the modularity and maintainability of the application",
+            ],
+          },
+        ],
+      },
     ],
   },
 ];
