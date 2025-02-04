@@ -75,7 +75,7 @@ const Experience = () => {
                             {experience.duration}
                           </div>
                         </div>
-                        <div className="text-secondary font-light text-[1.6vh]">
+                        <div className="text-secondary text-[1.6vh]">
                           {experience.description.map((desc, index) => (
                             <div key={index} className="py-2">
                               {desc}
