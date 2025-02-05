@@ -17,3 +17,21 @@ export const ACHIEVEMENTS = [
     link: "",
   },
 ];
+
+export const CP_ACCOUNTS = [
+  {
+    platform: "leetcode",
+    text: "Knight 1912",
+    link: "https://leetcode.com/u/kavania2002/",
+  },
+  {
+    platform: "codeforces",
+    text: "Specialist 1494",
+    link: "https://codeforces.com/profile/code_for_fun_15",
+  },
+  {
+    platform: "atcoder",
+    text: "847",
+    link: "https://atcoder.jp/users/kavania2002",
+  },
+];
