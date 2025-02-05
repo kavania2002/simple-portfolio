@@ -11,7 +11,7 @@ const Projects = () => {
   const [projects, setProjects] = useState(PROJECTS.slice(0, 4));
   const [showMore, setShowMore] = useState(false);
 
-  const handleShowMore = (show) => {
+  const handleShowMore = (show: boolean) => {
     if (show) {
       setProjects(PROJECTS);
     } else {
