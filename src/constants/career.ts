@@ -1,11 +1,11 @@
-export const EXPERIENCES = [
+export const CAREER = [
   {
     type: "work",
     label: "Work Experience",
     data: [
       {
         company: "Playpower Labs",
-        experiences: [
+        careers: [
           {
             role: "Software Developer",
             place: "Remote",
@@ -28,7 +28,7 @@ export const EXPERIENCES = [
       },
       {
         company: "Aegle Pro",
-        experiences: [
+        careers: [
           {
             role: "Software Developer Intern",
             place: "Remote",
@@ -49,7 +49,7 @@ export const EXPERIENCES = [
     data: [
       {
         company: "Ahmedabad University",
-        experiences: [
+        careers: [
           {
             role: "Teaching Assistant: Data Structure",
             place: "",
@@ -73,7 +73,7 @@ export const EXPERIENCES = [
       },
       {
         company: "Programming Club x GDSC",
-        experiences: [
+        careers: [
           {
             role: "Treasurer",
             place: "Ahmedabad University",
@@ -96,7 +96,7 @@ export const EXPERIENCES = [
       },
       {
         company: "Career Development Center",
-        experiences: [
+        careers: [
           {
             role: "Placement Coordinator",
             place: "Ahmedabad University",
@@ -111,7 +111,7 @@ export const EXPERIENCES = [
       },
       {
         company: "Ingenium (TechFest)",
-        experiences: [
+        careers: [
           {
             role: "Secretary",
             place: "Ahmedabad University",
@@ -135,7 +135,7 @@ export const EXPERIENCES = [
       },
       {
         company: "Stepwell",
-        experiences: [
+        careers: [
           {
             role: "Developer",
             place: "Ahmedabad University",
@@ -144,6 +144,59 @@ export const EXPERIENCES = [
               "Led a team of four to develop The Stepwell Radio App in just 15 days, enabling exclusive streaming for university students",
               "Integrated Firebase and Google OAuth for secure authentication and seamless access control",
               "Designed engagement strategies, including personalized content curation and interactive features, to increase student participation",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "education",
+    label: "Education",
+    data: [
+      {
+        company: "Ahmedabad University",
+        careers: [
+          {
+            role: "B.Tech in CSE",
+            place: "Ahmedabad",
+            duration: "Oct 2020 - May 2024",
+            description: [
+              "Core Courses: Data Structures, Algorithms, Operating Systems, Database Management Systems, Computer Networks",
+              "Major Electives: Machine Learning, Computer Vision, Software Engineering, Blockchain Technologies, Cloud Computing, Social Network Analysis",
+              "Electives: Digital Humanities, Bioinformatics, Mathematical Biology, Art of Storytelling and Performance",
+              "GPA: 3.17/4.0",
+            ],
+          },
+          {
+            role: "Minor in Mathematics",
+            place: "Ahmedabad",
+            duration: "Oct 2020 - May 2024",
+            description: [
+              "Relevant Coursework: Linear Algebra, Calculus, Differential Equations, Quantum Computing",
+            ],
+          },
+        ],
+      },
+      {
+        company: "KD Ambani Vidyamandir",
+        careers: [
+          {
+            role: "Senior Secondary Education",
+            place: "Jamnagar",
+            duration: "Apr 2018 - Mar 2020",
+            description: [
+              "Subjects: Physics, Chemistry, Mathematics, English, Computer Science",
+              "Percentage: Class XII - 91.6%",
+            ],
+          },
+          {
+            role: "Secondary Education",
+            place: "Jamnagar",
+            duration: "Apr 2016 - Mar 2018",
+            description: [
+              "Subjects: Mathematics, Science, English, Hindi, Social Science",
+              "Percentage: Class X - 94.4%",
             ],
           },
         ],

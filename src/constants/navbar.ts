@@ -8,8 +8,8 @@ export const navbarItems = [
     href: "/#skills",
   },
   {
-    name: "Experience",
-    href: "/#experience",
+    name: "Career",
+    href: "/#career",
   },
   {
     name: "Projects",

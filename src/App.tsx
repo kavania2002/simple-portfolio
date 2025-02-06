@@ -6,8 +6,8 @@ import AboutMeLargeScreen from "./sections/AboutMeLargeScreen";
 import AboutMeSmallScreen from "./sections/AboutMeSmallScreen";
 import SkillsSmallScreen from "./sections/SkillsSmallScreen";
 import { useScreenSize } from "./contexts/ScreenSizeContext";
-import ExperienceLargeScreen from "./sections/ExperienceLargeScreen";
-import ExperienceSmallScreen from "./sections/ExperienceSmallScreen";
+import ExperienceLargeScreen from "./sections/CareerLargeScreen";
+import ExperienceSmallScreen from "./sections/CareerSmallScreen";
 import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 
