@@ -5,6 +5,7 @@ import { FaProductHunt, FaGithub, FaLink } from "react-icons/fa6";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import { useScreenSize } from "../contexts/ScreenSizeContext";
+import { FaMedium } from "react-icons/fa";
 
 const Projects = () => {
   const { isMobile } = useScreenSize();
@@ -66,6 +67,11 @@ const Projects = () => {
                         <FaLink />
                       </a>
                     )}
+                    {project.mediumLink && (
+                      <a href={project.mediumLink} target="_blank">
+                        <FaMedium />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="w-5/6 flex-1">
@@ -73,7 +79,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                 </div>
-                <div className="flex flex-wrap items-center gap-x-2">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
                   {project.skills.map((skill, index) => (
                     <p
                       className="bg-primary md:bg-secondary text-sm rounded-full text-secondary md:text-primary px-4 py-1"

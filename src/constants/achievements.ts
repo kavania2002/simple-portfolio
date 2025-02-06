@@ -11,7 +11,10 @@ export const ACHIEVEMENTS = [
     text: "Winner of Website Making Challenge 2.0",
     link: "https://github.com/kavania2002/pgHUB",
   },
-
+  // {
+  //   text: "Solved more than 1500+ problems on various Coding Platforms",
+  //   link: "",
+  // },
   {
     text: "A grade certified National Cadet Corps",
     link: "",
