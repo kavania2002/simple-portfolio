@@ -1,15 +1,12 @@
 import { FaLink } from "react-icons/fa6";
 import { ACHIEVEMENTS, CP_ACCOUNTS } from "../constants/achievements";
 import { SOCIALS } from "../constants/socials";
-import { useScreenSize } from "../contexts/ScreenSizeContext";
-import Divider from "../components/Divider";
 
 const Achievements = () => {
-  const { isMobile } = useScreenSize();
-
   return (
-    <div className="h-screen w-full py-4 md:py-8 lg:py-10 flex flex-col">
-      {isMobile && <Divider className="px-10" />}
+    <div
+      id="achievements"
+      className="h-screen w-full py-4 md:py-8 lg:py-10 flex flex-col">
       <div className="h-full flex flex-col justify-center gap-y-[5vh] md:gap-y-[6vh]">
         <p className="px-10 md:px-24 lg:px-36 xl:px-50 2xl:px-64 text-[6vh] leading-[6vh] md:leading-tight md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-tertiary">
           Achievements
@@ -23,7 +20,7 @@ const Achievements = () => {
                 target="_blank">
                 <div
                   key={index}
-                  className="py-4 md:py-6 w-36 md:w-42 bg-secondary-100 border-2 border-secondary-500 rounded-lg flex flex-col gap-y-2 md:gap-y-4 items-center justify-center cursor-pointer">
+                  className="py-4 md:py-6 w-32 md:w-42 bg-secondary-100 border-2 border-secondary-500 rounded-lg flex flex-col gap-y-2 md:gap-y-4 items-center justify-center cursor-pointer">
                   <img
                     className="h-[4vh] md:h-[8vh]"
                     src={`/images/${account.platform}.svg`}
@@ -67,7 +64,6 @@ const Achievements = () => {
           ))}
         </div>
       </div>
-      {isMobile && <Divider className="px-10" />}
     </div>
   );
 };

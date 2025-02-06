@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Divider from "../components/Divider";
 import { EXPERIENCES } from "../constants/experience";
 
 const Experience = () => {
@@ -12,8 +11,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="h-screen py-6">
-      <Divider className="px-10" />
+    <div id="experience" className="h-screen py-6">
       <div className="h-full py-4 flex flex-col gap-y-6">
         <p className="px-10 text-[6vh] leading-[6vh] font-bold text-tertiary">
           Experience
@@ -94,7 +92,6 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <Divider className="px-10" />
     </div>
   );
 };

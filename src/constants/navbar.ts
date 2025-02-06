@@ -1,22 +1,26 @@
 export const navbarItems = [
   {
+    name: "About Me",
+    href: "/#about-me",
+  },
+  {
+    name: "Skills",
+    href: "/#skills",
+  },
+  {
     name: "Experience",
-    href: "/experience",
+    href: "/#experience",
   },
   {
     name: "Projects",
-    href: "/projects",
+    href: "/#projects",
   },
   {
     name: "Achievements",
-    href: "/achievements",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
+    href: "/#achievements",
   },
   {
     name: "Resume",
     href: "https://bit.ly/kavania2002",
-  }
+  },
 ];

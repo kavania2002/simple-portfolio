@@ -18,15 +18,17 @@ const LargeScreenNavbar = () => {
           <a href="/">kavania2002</a>
         </div>
         <div className="flex md:gap-x-5 lg:gap-x-8">
-          {navbarItems.map((item, index) => (
-            <a
-              target={item.name === "Resume" ? "_blank" : "_self"}
-              className="hover:opacity-75"
-              key={index}
-              href={item.href}>
-              {item.name}
-            </a>
-          ))}
+          {navbarItems
+            .filter((item) => item.name !== "Skills")
+            .map((item, index) => (
+              <a
+                target={item.name === "Resume" ? "_blank" : "_self"}
+                className="hover:opacity-75"
+                key={index}
+                href={item.href}>
+                {item.name}
+              </a>
+            ))}
         </div>
       </div>
     </div>
@@ -73,7 +75,11 @@ const MobileNavbar = () => {
         } transition-transform duration-300 ease-in-out flex flex-col items-center justify-center shadow-lg`}>
         <div className="flex flex-col gap-y-5 text-xl font-bold text-tertiary">
           {navbarItems.map((item, index) => (
-            <a className="hover:opacity-75" key={index} href={item.href}>
+            <a
+              target={item.name === "Resume" ? "_blank" : "_self"}
+              className="hover:opacity-75"
+              key={index}
+              href={item.href}>
               {item.name}
             </a>
           ))}
