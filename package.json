@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "packageManager": "yarn@1.22.22",
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "framer-motion": "^12.4.0",
