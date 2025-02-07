@@ -20,7 +20,7 @@ const Loader = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    if (progress >= 50) {
+    if (progress >= 100) {
       const fadeOutTimer = setTimeout(() => {}, 500);
 
       return () => clearTimeout(fadeOutTimer);
@@ -28,9 +28,9 @@ const Loader = () => {
 
     const timer = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 50) {
+        if (prev >= 100) {
           clearInterval(timer);
-          return 50;
+          return 100;
         }
         return prev + 0.5;
       });
@@ -40,8 +40,14 @@ const Loader = () => {
   }, [progress]);
 
   return (
-    <div className="fixed inset-0 bg-primary flex items-center justify-center">
-      <svg width="300" height="300" className="">
+    <div className="fixed inset-0 bg-primary flex items-center justify-center transition-all duration-1000">
+      <svg
+        width="300"
+        height="300"
+        style={{
+          scale: progress >= 70 ? 0 : 1,
+          transition: "all 0.5s ease-out",
+        }}>
         <path d={pathData} fill="none" stroke="#fdf0e2" strokeWidth="2" />
 
         <path
@@ -61,7 +67,7 @@ const Loader = () => {
           dominantBaseline="middle"
           className="text-5xl font-bold fill-secondary"
           style={{
-            opacity: progress === 50 ? 1 : 0,
+            opacity: progress >= 50 ? 1 : 0,
             transition: "opacity 0.5s ease-in",
           }}>
           KG

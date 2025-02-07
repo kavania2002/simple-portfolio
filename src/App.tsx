@@ -12,7 +12,7 @@ import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const { isMobile } = useScreenSize();
 
   useEffect(() => {
@@ -24,12 +24,9 @@ function App() {
   }, []);
 
   return (
-    <div className="overflow-hidden">
-      <Loader />
-      <div
-        className={`bg-primary font-inria-sans transition-all duration-1000 ${
-          !loading ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-        }`}>
+    <div className="overflow-hidden bg-primary font-inria-sans">
+      {loading && <Loader />}
+      {!loading && (
         <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
           <div className="snap-always snap-center h-screen">
             <Navbar />
@@ -67,7 +64,7 @@ function App() {
             <Achievements />
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
