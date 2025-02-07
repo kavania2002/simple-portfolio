@@ -12,7 +12,7 @@ import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const { isMobile } = useScreenSize();
 
   useEffect(() => {
