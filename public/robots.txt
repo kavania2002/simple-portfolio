@@ -1,0 +1,11 @@
+# Allow all search engines to index everything
+User-agent: *
+Allow: /
+
+# Prevent search engines from indexing unnecessary files
+Disallow: /dist/
+Disallow: /src/
+Disallow: /node_modules/
+
+# Sitemap location (important for SEO)
+Sitemap: https://kavania2002.in/sitemap.xml
