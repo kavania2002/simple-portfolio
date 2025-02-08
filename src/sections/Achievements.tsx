@@ -24,7 +24,7 @@ const Achievements = () => {
                 <a href={account.link} target="_blank">
                   <div
                     key={index}
-                    className="py-4 md:py-6 w-32 md:w-42 bg-secondary-100 border-2 border-secondary-500 rounded-lg flex flex-col gap-y-2 md:gap-y-4 items-center justify-center cursor-pointer">
+                    className="py-4 md:py-6 w-32 md:w-42 bg-secondary-100 border-2 border-secondary-500 rounded-lg flex flex-col gap-y-2 md:gap-y-4 items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-300">
                     <img
                       className="h-[4vh] md:h-[8vh]"
                       src={`/images/${account.platform}.svg`}
