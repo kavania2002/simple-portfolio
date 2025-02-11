@@ -15,9 +15,9 @@ const Hero = () => {
             </p>
           </Reveal>
           <Reveal controls={{ delay: isMobile ? 1.2 : 2.2, hidden: { y: 50 } }}>
-            <p className="font-bold text-[6vh] leading-[6vh] md:leading-none md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-tertiary">
+            <h1 className="font-bold text-[6vh] leading-[6vh] md:leading-none md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-tertiary">
               Kavan Gondalia
-            </p>
+            </h1>
           </Reveal>
           <Reveal controls={{ delay: isMobile ? 1.4 : 2.4, hidden: { y: 50 } }}>
             <div className="flex flex-col gap-y-1 text-[3vh] leading-[4vh] md:leading-tight md:text-xl lg:text-xl xl:text-4xl 2xl:text-5xl text-tertiary-850">
