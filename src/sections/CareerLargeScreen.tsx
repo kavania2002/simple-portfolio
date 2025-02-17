@@ -86,7 +86,7 @@ const Career = () => {
                       }}>
                       <div className="flex flex-col lg:gap-y-2">
                         <div className="flex items-center justify-between">
-                          <p className="text-xl 2xl:text-3xl font-bold text-tertiary">
+                          <p className="text-xl lg:text-lg 2xl:text-3xl font-bold text-tertiary">
                             {career.role}
                           </p>
                           {career.place !== "" && (
@@ -95,7 +95,7 @@ const Career = () => {
                             </p>
                           )}
                         </div>
-                        <p className="-mt-1 2xl:mt-0 text-md 2xl:text-lg font-light text-tertiary">
+                        <p className="-mt-1 2xl:mt-0 text-md lg:text-base 2xl:text-lg font-light text-tertiary">
                           {career.duration}
                         </p>
                         <ul className="list-disc text-md lg:text-[14px] xl:text-base 2xl:text-[22px] font-normal text-secondary">
