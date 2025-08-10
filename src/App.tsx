@@ -16,11 +16,16 @@ function App() {
   const { isMobile } = useScreenSize();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3500);
+    const handleLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3500);
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener("load", handleLoad);
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   return (
