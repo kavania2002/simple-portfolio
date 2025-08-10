@@ -48,7 +48,7 @@ const Hero = () => {
               controls={{ delay: isMobile ? 1.4 : 2.4, hidden: { y: 50 } }}>
               <div className="z-10 translate-x-[-15px] translate-y-[15px] hover:translate-x-[-10px] hover:translate-y-[10px] transition-transform duration-300">
                 <img
-                  src="/images/picofme.png"
+                  src="/images/picofme.webp"
                   alt="picofme"
                   className="h-[40vh] md:h-full rounded-md"
                 />
