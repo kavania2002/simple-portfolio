@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="overflow-hidden bg-primary font-inria-sans">
-      <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+      <div className="snap-y snap-mandatory h-screen scroll-container">
           <div className="snap-always snap-center h-screen">
             <Navbar />
             <Hero />
