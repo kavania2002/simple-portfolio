@@ -6,7 +6,6 @@ import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import { useScreenSize } from "../contexts/ScreenSizeContext";
 import { FaMedium } from "react-icons/fa";
-import { Reveal } from "../components/Reveal";
 
 const Projects = () => {
   const { isMobile } = useScreenSize();
@@ -29,11 +28,9 @@ const Projects = () => {
       {!isMobile && <Divider className="px-10" />}
       <div className="h-full md:mx-2 md:bg-secondary rounded-2xl md:rounded-[42px] md:px-24 lg:px-30 xl:px-44 2xl:px-64">
         <div className="h-full flex flex-col gap-y-5 justify-center md:py-2">
-          <Reveal controls={{ delay: 0.5 }}>
             <p className="w-full text-[6vh] leading-[6vh] md:leading-tight px-10 md:px-0 md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-tertiary md:text-primary">
               Projects
             </p>
-          </Reveal>
           <SimpleBar
             style={{
               maxHeight: `${!isMobile} ? '65vh' : '75vh'`,
@@ -42,16 +39,7 @@ const Projects = () => {
               showMore && !isMobile && "project-box"
             }`}>
             {projects.map((project, index) => (
-              <Reveal
-                key={index}
-                controls={{
-                  delay:
-                    0.5 +
-                    (!isMobile
-                      ? ((showMore ? index % 2 : index + 1) + 1) * 0.2
-                      : 0),
-                }}>
-                <div className="relative flex flex-col h-[32vh] md:h-[29vh] gap-y-[1vh] p-[2.5vh] px-6 bg-secondary md:bg-primary text-primary md:text-secondary rounded-xl shadow-lg">
+                <div key={index} className="relative flex flex-col h-[32vh] md:h-[29vh] gap-y-[1vh] p-[2.5vh] px-6 bg-secondary md:bg-primary text-primary md:text-secondary rounded-xl shadow-lg">
                   <div className="flex justify-between items-baseline">
                     <p className="text-[3vh] md:text-[3.5vh] font-bold ">
                       {project.title}
@@ -99,17 +87,14 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-              </Reveal>
             ))}
           </SimpleBar>
           <div className="w-full flex justify-center items-center">
-            <Reveal controls={{ delay: isMobile ? 1 : 1.75 }}>
               <button
                 onClick={() => handleShowMore(!showMore)}
                 className="text-base md:text-md px-6 py-2 bg-secondary  md:bg-primary text-primary md:text-tertiary shadow-2xl rounded-lg font-bold cursor-pointer">
                 {showMore ? "Show Less" : "Show More"}
               </button>
-            </Reveal>
           </div>
         </div>
       </div>

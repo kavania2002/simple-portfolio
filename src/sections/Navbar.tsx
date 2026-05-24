@@ -4,7 +4,6 @@ import { useScreenSize } from "../contexts/ScreenSizeContext";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 import { Reveal } from "../components/Reveal";
-
 const Navbar = () => {
   const { isMobile } = useScreenSize();
 
@@ -15,9 +14,9 @@ const LargeScreenNavbar = () => {
   return (
     <div className="w-full">
       <div className="pt-6 md:px-24 lg:px-36 xl:px-50 2xl:px-64 flex items-center justify-between text-base lg:text-md 2xl:text-lg font-bold text-tertiary">
-        <Reveal controls={{ delay: 0.5, hidden: { y: -50 } }}>
-          <a href="/">kavania2002</a>
-        </Reveal>
+          <Reveal controls={{ delay: 0.5, hidden: { y: -50 } }}>
+            <a href="/">kavania2002</a>
+          </Reveal>
         <div className="flex md:gap-x-5 lg:gap-x-8">
           {navbarItems
             .filter((item) => item.name !== "Skills")
@@ -48,11 +47,11 @@ const MobileNavbar = () => {
   return (
     <div className="relative w-full">
       <div className="absolute w-full flex justify-center pt-4 pb-4">
-        <Reveal controls={{ delay: 0.5, hidden: { y: -50 } }}>
-          <p className="text-tertiary text-3xl font-bold">
-            <a href="/">kavania2002</a>
-          </p>
-        </Reveal>
+          <Reveal controls={{ delay: 0.5, hidden: { y: -50 } }}>
+            <p className="text-tertiary text-3xl font-bold">
+              <a href="/">kavania2002</a>
+            </p>
+          </Reveal>
       </div>
 
       {isMenuOpen && (

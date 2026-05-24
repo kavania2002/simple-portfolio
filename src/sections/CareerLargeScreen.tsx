@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { CAREER } from "../constants/career";
-import { Reveal } from "../components/Reveal";
-
 const Career = () => {
   const [careerType, setCareerType] = useState("work");
   const [selectedOrg, setSelectedOrg] = useState(0);
@@ -16,13 +14,10 @@ const Career = () => {
     <div
       id="career"
       className="h-screen w-full px-10 md:px-24 lg:px-36 xl:px-50 2xl:px-64 py-4 md:py-8 lg:py-10 flex flex-col gap-y-6">
-      <Reveal controls={{ delay: 0.2 }}>
         <p className="text-[3vh] leading-[4vh] md:leading-tight md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-tertiary">
           Career
         </p>
-      </Reveal>
 
-      <Reveal controls={{ delay: 0.3 }}>
         <div className="relative w-full bg-secondary-300 rounded-lg">
           <div className="flex items-center justify-center text-center text-md font-bold text-tertiary p-2 relative">
             {CAREER.map((career, index) => (
@@ -43,7 +38,6 @@ const Career = () => {
             ))}
           </div>
         </div>
-      </Reveal>
 
       <div className="w-full flex gap-x-8">
         <div className="flex flex-col gap-y-0 justify-start">
@@ -51,12 +45,8 @@ const Career = () => {
             return (
               career.type === careerType &&
               career.data.map((careerData, index) => (
-                <Reveal
-                  key={index}
-                  controls={{
-                    delay: 0.3 + (index + 1) * 0.1,
-                  }}>
                   <div
+                    key={index}
                     onClick={() => setSelectedOrg(index)}
                     className={`${
                       selectedOrg === index
@@ -65,7 +55,6 @@ const Career = () => {
                     } w-48 border-l-4 lg:text-base xl:text-md font-bold py-4 px-4 cursor-pointer text-center text-secondary`}>
                     {careerData.company}
                   </div>
-                </Reveal>
               ))
             );
           })}
@@ -79,12 +68,7 @@ const Career = () => {
                 (careerData, index) =>
                   selectedOrg === index &&
                   careerData.careers.map((career, index) => (
-                    <Reveal
-                      key={index}
-                      controls={{
-                        delay: 0.3 + (index + 1) * 0.1,
-                      }}>
-                      <div className="flex flex-col lg:gap-y-2">
+                      <div key={index} className="flex flex-col lg:gap-y-2">
                         <div className="flex items-center justify-between">
                           <p className="text-xl lg:text-lg 2xl:text-3xl font-bold text-tertiary">
                             {career.role}
@@ -106,7 +90,6 @@ const Career = () => {
                           ))}
                         </ul>
                       </div>
-                    </Reveal>
                   ))
               )
             );
