@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-import Loader from "./components/Loader";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import AboutMeLargeScreen from "./sections/AboutMeLargeScreen";
@@ -12,27 +10,11 @@ import Projects from "./sections/Projects";
 import Achievements from "./sections/Achievements";
 
 function App() {
-  const [loading, setLoading] = useState(true);
   const { isMobile } = useScreenSize();
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 3500);
-    };
-
-    window.addEventListener("load", handleLoad);
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
 
   return (
     <div className="overflow-hidden bg-primary font-inria-sans">
-      {loading && <Loader />}
-      {!loading && (
-        <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+      <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
           <div className="snap-always snap-center h-screen">
             <Navbar />
             <Hero />
@@ -69,7 +51,6 @@ function App() {
             <Achievements />
           </div>
         </div>
-      )}
     </div>
   );
 }
