@@ -6,6 +6,10 @@ const Career = () => {
   const [careerType, setCareerType] = useState("work");
   const [selectedOrg, setSelectedOrg] = useState(0);
 
+  const activeIndex = Math.max(
+    0,
+    CAREER.findIndex((career) => career.type === careerType)
+  );
   const changeCareerType = (type: string) => {
     setCareerType(type);
     setSelectedOrg(0);
@@ -17,28 +21,25 @@ const Career = () => {
           <p className="text-center px-10 text-[5vh] leading-[4vh] font-bold text-tertiary">
             Career
           </p>
-          <div className="w-full bg-secondary-300">
-            <div className="flex items-center justify-center text-center text-[3vw] font-bold text-tertiary p-2">
-              {CAREER.map((career, index) => (
-                <div key={index} className="flex-1 relative">
-                  <button
-                    className="w-full py-1 px-4 cursor-pointer relative z-10"
-                    onClick={() => changeCareerType(career.type)}>
-                    {career.label}
-                  </button>
-                  {career.type === careerType && (
-                    <motion.div
-                      layoutId="activeTab"
-                      className="absolute top-0 left-0 w-full h-full bg-primary rounded-lg"
-                      transition={{
-                        type: "spring",
-                        stiffness: 250,
-                        damping: 20,
-                      }}
-                    />
-                  )}
-                </div>
-              ))}
+          <div className="w-full bg-secondary-300 p-2">
+            <div className="relative">
+              <motion.div
+                className="absolute inset-y-0 left-0 bg-primary rounded-lg"
+                style={{ width: `${100 / CAREER.length}%` }}
+                animate={{ x: `${activeIndex * 100}%` }}
+                transition={{ type: "spring", stiffness: 250, damping: 20 }}
+              />
+              <div className="flex items-center justify-center text-center text-[3vw] font-bold text-tertiary relative">
+                {CAREER.map((career, index) => (
+                  <div key={index} className="flex-1 relative">
+                    <button
+                      className="w-full py-1 px-4 cursor-pointer relative z-10"
+                      onClick={() => changeCareerType(career.type)}>
+                      {career.label}
+                    </button>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         <div className="flex flex-col gap-y-2">
