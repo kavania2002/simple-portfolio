@@ -4,14 +4,40 @@ export const CAREER = [
     label: "Work Experience",
     data: [
       {
+        company: "Snaptrude",
+        careers: [
+          {
+            role: "SDE - 1",
+            place: "Remote",
+            duration: "July 2025 - Present",
+            description: [
+              "Built an initial single-prompt agent harness using FastAPI and LLMs, analyzing production bottlenecks around context window expansion and existing tool-selection conflicts to justify a migration toward modular multi-agents.",
+              "Engineered an autonomous data lookup agent that utilizes multi-step execution planning to query projects/folders across 15+ schemas and integrated an external tool to bridge cloud storage as live knowledge sources into the workflows.",
+              "Migrated the spreadsheet module (SpreadJS) from an iframe architecture to a standalone React app with reverse-proxy routing, reducing load time by 50% and simplifying cross-tab communication.",
+            ],
+          },
+
+          {
+            role: "SDE Intern",
+            place: "Remote",
+            duration: "April 2025 - July 2025",
+            description: [
+              "Upgraded the Stories Panel, enabling real-time story height edits and area feedback, improving experience for 50k+ users.",
+              "Built a feature, allowing architects to quickly copy room layouts across multiple spaces, speeding up design work by 30%.",
+            ],
+          },
+        ],
+      },
+      {
         company: "Playpower Labs",
         careers: [
           {
             role: "Software Developer",
             place: "Remote",
-            duration: "July 2024 - Present",
+            duration: "July 2024 - April 2025",
             description: [
-              "Currently developing an advanced underwater photo capturing app with Jetpack Compose and Kotlin, utilizing MVVM architecture, coroutines, and background jobs to optimize camera capabilities and ensure reliable image processing",
+              "Designed and developed web-based math quests for 1,000+ students, combining prompt-engineered narratives with gamified, performance-optimized math challenges.",
+              "Built an underwater camera app using Jetpack Compose, Kotlin, MVVM, and coroutines, enabling advanced camera controls and reliable image capture under challenging conditions.",
             ],
           },
           {

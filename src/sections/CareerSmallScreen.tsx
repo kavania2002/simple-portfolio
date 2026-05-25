@@ -12,13 +12,13 @@ const Career = () => {
   };
 
   return (
-    <div id="career" className="h-screen py-6">
-      <div className="h-full py-4 flex flex-col gap-y-6">
-          <p className="px-10 text-[6vh] leading-[6vh] font-bold text-tertiary">
+    <div id="career" className="h-screen py-2">
+      <div className="h-full py-1 flex flex-col gap-y-4">
+          <p className="text-center px-10 text-[5vh] leading-[4vh] font-bold text-tertiary">
             Career
           </p>
           <div className="w-full bg-secondary-300">
-            <div className="flex items-center justify-center text-center text-[4.5vw] font-bold text-tertiary p-2">
+            <div className="flex items-center justify-center text-center text-[3vw] font-bold text-tertiary p-2">
               {CAREER.map((career, index) => (
                 <div key={index} className="flex-1 relative">
                   <button
@@ -54,7 +54,7 @@ const Career = () => {
                       <div
                         key={index}
                         onClick={() => setSelectedOrg(index)}
-                        className={`font-bold text-secondary text-[1.8vh] py-2 px-4 text-center border-b-3 cursor-pointer ${
+                        className={`font-bold flex-1 text-secondary text-[1.5vh] py-2 px-4 text-center border-b-3 cursor-pointer ${
                           career.data.length === 2 ? "flex-1" : ""
                         } ${
                           selectedOrg === index
@@ -68,7 +68,7 @@ const Career = () => {
                 )
             )}
           </div>
-          <div className="h-full px-10 flex flex-col gap-y-4">
+          <div className="h-full px-6 flex flex-col gap-y-4">
             {CAREER.map(
               (career) =>
                 career.type === careerType &&
@@ -92,7 +92,7 @@ const Career = () => {
                           </div>
                           <div className="text-secondary text-[1.6vh]">
                             {career.description.map((desc, index) => (
-                              <div key={index} className="py-2">
+                              <div key={index} className="py-1.5">
                                 {desc}
                               </div>
                             ))}

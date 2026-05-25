@@ -2,7 +2,7 @@ import AboutMeText from "../components/AboutMeText";
 
 const AboutMe = () => {
   return (
-    <div id="about-me" className="h-screen px-10 py-6">
+    <div id="about-me" className="h-screen px-6 py-6">
       <div className="flex flex-col h-full justify-center gap-y-[5vh]">
           <p className="text-[6vh] leading-[6vh] font-bold text-tertiary">
             About Me
