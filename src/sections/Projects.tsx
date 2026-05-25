@@ -51,22 +51,22 @@ const Projects = () => {
                           : "items-center gap-x-2"
                       } text-tertiary text-[2.5vh]`}>
                       {project.productHuntLink && (
-                        <a href={project.productHuntLink} target="_blank">
+                        <a aria-label="Product Hunt Logo"  href={project.productHuntLink} target="_blank">
                           <FaProductHunt />
                         </a>
                       )}
                       {project.githubLink && (
-                        <a href={project.githubLink} target="_blank">
+                        <a aria-label="Github Logo" href={project.githubLink} target="_blank">
                           <FaGithub />
                         </a>
                       )}
                       {project.hostedLink && (
-                        <a href={project.hostedLink} target="_blank">
+                        <a aria-label="External Link Logo" href={project.hostedLink} target="_blank">
                           <FaLink />
                         </a>
                       )}
                       {project.mediumLink && (
-                        <a href={project.mediumLink} target="_blank">
+                        <a aria-label="Medium Logo" href={project.mediumLink} target="_blank">
                           <FaMedium />
                         </a>
                       )}
