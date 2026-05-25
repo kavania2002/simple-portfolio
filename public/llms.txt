@@ -1,0 +1,77 @@
+LLM access file for kavania2002.in
+
+Site: https://kavania2002.in
+Owner: Kavan Gondalia
+Updated: 2026-05-25
+
+Purpose
+- Personal portfolio for Kavan Gondalia, a backend-focused full-stack developer.
+- Highlights about, skills, career history, projects, achievements, and contact links.
+
+High-level summary
+- Tagline: "Trying everything & finding happiness"
+- Focus: backend-focused full-stack work, problem solving, scalable systems.
+
+About
+- Explorer mindset; enjoys learning, experimenting, and building.
+- Interests include problem decomposition and elegant solutions.
+- Personal note: enjoys jogging with music to recharge.
+
+Skills
+Languages
+- TypeScript, JavaScript, C++, Go, Python, GraphQL, Dart, Java
+
+Frameworks and Libraries
+- Node.js, Express.js, FastAPI, Flutter, React.js, Next.js
+
+Tools and Technologies
+- Git, MongoDB, PostgreSQL, Docker, Redis, MySQL, AWS, Nginx
+
+Career
+- Snaptrude: SDE-1 (Jul 2025 - Present)
+  - Built a single-prompt agent harness with FastAPI and LLMs; analyzed bottlenecks and tool-selection conflicts to justify modular multi-agents.
+  - Engineered a data lookup agent for multi-step execution over 15+ schemas; integrated external cloud storage tools as live knowledge sources.
+  - Migrated a spreadsheet module from iframe to standalone React app with reverse-proxy routing; reduced load time by about 50%.
+- Snaptrude: SDE Intern (Apr 2025 - Jul 2025)
+  - Upgraded Stories Panel for real-time edits and feedback; improved experience for 50k+ users.
+  - Built a feature to copy room layouts across multiple spaces; sped up design work by about 30%.
+- Playpower Labs: SDE (July 2024 - April 2025)
+  - Designed and developed web-based math questions for 1,000+ students, combining prompt-engineered narratives with gamified, performance-optimized math challenges.
+  - Built an underwater camera app using Jetpack Compose, Kotlin, MVVM, and coroutines, enabling advanced camera controls and reliable image capture under challenging conditions.
+- Playpower Labs: SDE Intern (Jan 2024 - June 2024)
+  - Replaced existing Looker reports by developing a new reporting system using AngularJS, Spring, PostgreSQL, and GraphQL, serving 1,000+ users with improved functionality and UX.
+  - Developed a high-performance BFF layer with GraphQL, optimizing data responses and implementing Java Spring for robust backend performance; reduced SQL query response times by about 12%.
+  - Engineered micro-frontends with AngularJS and RxJS, improving state management, modularity, and maintainability.
+ - Aegle Pro: SDE Intern (Jul 2023 - Dec 2023)
+  - Used Node.js as the primary backend to develop a Svelte dashboard that helps doctors efficiently assign treatments to patients.
+  - Implemented pagination for search queries in the exercise module using PostgreSQL, improving responsiveness for large datasets.
+  - Built custom Flutter components and integrated them with the Node.js backend.
+
+Projects
+- Published Links Buddy
+  - Chrome extension to save and organize published links from Claude, GPT, Bolt.
+  - Stack: React, TypeScript, IndexedDB
+- Dropfile
+  - SaaS for secure temporary video file sharing.
+  - Stack: Go, BadgerDB, Nginx, React, FFmpeg
+- SecureDApp Website
+  - 10+ responsive pages and a dashboard from Figma designs.
+  - Stack: React, Tailwind CSS
+- Geth: Concurrency
+  - Modified go-ethereum to support multiple database clients on a single database.
+  - Stack: Go, MDBX, RPC, Ethereum
+
+Achievements (selected)
+- Best Safety Net Hack at Ingenious Hackathon 2022
+- Best Beginner Hack at Ingenious Hackathon 2021
+- Winner of Website Making Challenge 2.0
+- A grade certified National Cadet Corps
+
+Contact and links
+- GitHub: https://github.com/kavania2002
+- X (Twitter): https://x.com/kavania2002
+- LinkedIn: https://linkedin.com/in/kavania2002
+- Email: kavan155gondalia@gmail.com
+
+Usage notes
+- Intended to help LLMs answer questions about this portfolio.
