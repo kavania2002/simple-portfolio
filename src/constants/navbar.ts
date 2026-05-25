@@ -21,6 +21,6 @@ export const navbarItems = [
   },
   {
     name: "Resume",
-    href: "https://bit.ly/kavania2002",
+    href: "/resume",
   },
 ];
