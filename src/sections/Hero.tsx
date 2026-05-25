@@ -54,12 +54,18 @@ const Hero = () => {
               controls={{ delay: isMobile ? 1.4 : 2.4, hidden: { y: 50 } }}>
               <div className="relative z-10 translate-x-[-15px] translate-y-[15px] hover:translate-x-[-10px] hover:translate-y-[10px] transition-transform duration-300">
                 <img
-                  src="/images/picofme.webp"
+                  src="/images/picofme-400.webp"
+                  srcSet="/images/picofme-400.webp 400w, /images/picofme-800.webp 800w"
+                  sizes="(max-width: 767px) 70vw, (max-width: 1279px) 240px, (max-width: 1535px) 288px, 400px"
                   alt="picofme"
+                  width={400}
+                  height={500}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                   className="h-[40vh] md:h-full rounded-md"
                   onLoad={() => {
-                    console.log("Image loaded");
-                    setIsImageLoaded(true)
+                    setIsImageLoaded(true);
                   }}
                 />
               </div>
