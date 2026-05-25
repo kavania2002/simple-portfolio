@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { FaHandshake } from "react-icons/fa";
 import { Reveal } from "../components/Reveal";
 import { useScreenSize } from "../contexts/ScreenSizeContext";
 
 const Hero = () => {
   const { isMobile } = useScreenSize();
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   return (
     <div className="h-full px-10 md:px-24 lg:px-36 xl:px-50 2xl:px-64">
@@ -42,15 +44,23 @@ const Hero = () => {
           <div className="relative w-full md:w-60 lg:w-72 2xl:w-100 flex justify-center">
             <Reveal
               controls={{ delay: isMobile ? 1.2 : 2.2, hidden: { y: 50 } }}>
-              <div className="absolute h-[40vh] md:h-[300px] lg:h-[360px] 2xl:h-[500px] w-[32vh] md:w-60 lg:w-72 2xl:w-100 bg-secondary-250 rounded-md"></div>
+              <div
+                className={`absolute h-[40vh] md:h-[300px] lg:h-[360px] 2xl:h-[500px] w-[32vh] md:w-60 lg:w-72 2xl:w-100 bg-secondary-250 rounded-md ${
+                  !isImageLoaded ? "skeleton-shimmer" : ""
+                }`}
+              ></div>
             </Reveal>
             <Reveal
               controls={{ delay: isMobile ? 1.4 : 2.4, hidden: { y: 50 } }}>
-              <div className="z-10 translate-x-[-15px] translate-y-[15px] hover:translate-x-[-10px] hover:translate-y-[10px] transition-transform duration-300">
+              <div className="relative z-10 translate-x-[-15px] translate-y-[15px] hover:translate-x-[-10px] hover:translate-y-[10px] transition-transform duration-300">
                 <img
                   src="/images/picofme.webp"
                   alt="picofme"
                   className="h-[40vh] md:h-full rounded-md"
+                  onLoad={() => {
+                    console.log("Image loaded");
+                    setIsImageLoaded(true)
+                  }}
                 />
               </div>
             </Reveal>
